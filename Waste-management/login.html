@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+body{
+    background-image: url(codioful-formerly-gradienta-n2XqPm7Bqhk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header class="p-3 text-bg-dark" style="background-color: black;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="wastelogo.png" alt="" srcset="" style="height: 60px;"></a>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a style="color: burlywood;" href="index.html" class="nav-link px-3 ">Home</a></li>
+                    <li><a style="color: burlywood;" href="contact.html" class="nav-link px-3 ">Contact Us</a></li>
+
+                    <li><a style="color: burlywood;" href="FAQ.html" class="nav-link px-3 ">FAQs</a></li>
+                    <li><a style="color: burlywood;" href="About.html" class="nav-link px-3 ">About</a></li>
+                </ul>
+
+
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2"><a href="login.html"
+                            style="color: white; text-decoration: none;">Login</a></button>
+                            <button type="button" class="btn btn-outline-light me-2 btn-warning"><a href="signup.html"
+                                style="color: white; text-decoration: none;">Signup</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--Login Section-->
+<div class="container" style="color: burlywood;"><br><br>
+    
+    <form id="loginForm" class="container" onsubmit="login(event)"><br><br>
+        <h2 class="fs-1"style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: burlywood;">Login Form</h2>
+        <div class="mb-3"><b>
+            <label for="username" class="form-label fs-4">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </b></div>
+        <div class="mb-3"><b><br><br>
+            <label for="password" class="form-label fs-4">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </b></div><br>
+
+        <button type="submit" class="btn" style="background-color: burlywood; color: black;"><b>Login</b></button>
+    </form>
+    <!--Login Section Ends-->
+    <!--Dispose Waste Section-->
+    <div id="wasteForm" style="display: none;">
+        <h3 class="fs-1"><b>Dispose Waste</b></h3><br>
+        <label for="wasteType" class="fs-3"><b>Waste Type:</b></label>
+        <select id="wasteType" name="wasteType" class="btn btn-grp dropdown-toggle btn-success fs-6" style="font-size: 20px !important; color: rgb(255, 255, 255); font-weight: bold;">
+            
+            <option value="plastic Waste">Plastic Waste</option>
+            <option value="paper Waste">Paper Waste</option>
+            <option value="glass Waste">Glass Waste</option>
+            <option value="Municipal Solid Waste (MSW)">Municipal Solid Waste (MSW) </option>
+            <option value="Industrial Waste">Industrial Waste</option>
+            <option value="Hazardous Waste">Hazardous Waste</option>
+            <option value="Biodegradable Waste">Biodegradable Waste</option>
+            <option value="E-waste (Electronic Waste)">E-waste (Electronic Waste)</option>
+            <option value="Construction and Demolition Waste">Construction and Demolition Waste</option>
+            <option value="Medical or Healthcare Waste">Medical or Healthcare Waste</option>
+            <option value="Radioactive Waste">Radioactive Waste</option>
+            <option value="Agricultural Waste">Agricultural Waste</option>
+            <option value="Mining Waste">Mining Waste</option>
+            <option value="Water Waste">Water Waste</option>
+        </select>
+    <span> </span>
+        <label for="quantity" class="fs-4" style="font-weight: bold;">Quantity (in kg):</label>
+        <input type="number" id="quantity" name="quantity"required style="border-radius: 20px;width: 250px; height: 50px;">
+    
+        <button type="button" onclick="disposeWaste()" class="btn btn-primary" style="font-size: 25px !important; color: rgb(255, 255, 255); font-weight: bold;">Dispose Waste</button>
+    </div><br><br>
+
+    
+<!--Dispose Waste Section ends-->
+    <div id="rewardPoints" style="display: none; font-weight: bold;color: burlywood;" class="fs-1">
+        <h3 class="fs-2" style="font-weight: bold;">Reward Points</h3><br>
+        <p class="fs-3">You have <span id="points">0</span> points.</p>
+        <button type="button" onclick="redeemPoints()" class="btn btn-md" style="background-color: burlywood; color: white; font-weight: bold;">Redeem Points</button>
+    </div>
+</div>
+<footer class="mt-2 container-fluid" style="text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #323131;
+    color: aliceblue;">
+        <p>&copy; 2023 Kachra Hub. All rights reserved.</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+<script src="script.js"></script>
+</body>
+</html>
