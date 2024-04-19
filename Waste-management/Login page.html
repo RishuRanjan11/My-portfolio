@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>login page</title>
+    <link rel="stylesheet" href="loginpage.css"> 
+</head>
+<body style="background-color:rgb(79, 169, 213)">
+
+    <!--FOR SIGN UP PAGE-->
+
+    <div class="signup">
+        <p class="c1">SIGN UP</p>
+        <form action="#">
+            <label class="email" >Email</label><br>
+            <input type="text" name="Email" placeholder="abc@gmail.com" class="input" style="top:25px;">
+            <br><br>
+            <label class="email">Password</label><br>
+            <input type="password" name="Password" placeholder="Enter your password" class="input" style="top:25px;">
+            <br><br>
+            <input type="submit" value="SIGN UP" class="button" action="#">
+            <p class="para">--------------------------OR------------------------</p>
+            <input type="submit" value="" class="google" action="#">
+            <input type="submit" value="" class="facebook" >
+            <input type="submit" value="" class="linkedin" >
+            <p class="para2">Already a user? <span> </span><a href="#">LOGIN</a></p>
+            
+           
+        </form>
+    </div>
+
+    <!--FOR LOGIN PAGE-->
+    <div class="Login">
+        <br><br><br><br>
+        <p class="c1">LOGIN</p>
+        <form action="#">
+            <label class="email" >Username</label><br>
+            <input type="text" name="Username" placeholder="username" class="input" style="top:25px;">
+            <br><br>
+            <label class="email">Password</label><br>
+            <input type="password" name="Password" placeholder="Enter your password" class="input" style="top:25px;">
+            <br><br>
+            <input type="checkbox" name="rememberme" class="rememberme">
+            <label class="rememberme">REMEMBER ME?</label><br>
+            <button type="button" onclick="login()" class="btn btn-primary">Login</button>
+            <br>
+            <a class="forgotpassword" href="#">Forgot Password?</a>
+            
+            
+            
+           
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

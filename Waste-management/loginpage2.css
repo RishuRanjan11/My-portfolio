@@ -1,0 +1,99 @@
+.body{
+    width: 700px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    
+}
+.c1{
+    border: solid;
+    width: 450px;
+    height: 600px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+    background-color:black; 
+    box-shadow: 0 0 50px burlywood;
+    clip-path: inset(-30px 0px -30px -30px);
+    border: solid;
+    border: 2px;
+}
+.c2{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 250px;
+    top:-1000px;
+    
+    
+
+}
+.login{
+    position: relative;
+    left: 800px;
+    top: -200px;
+    font-size: larger;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.logo{
+    height: 100px; 
+    border-radius:20px;
+    position: relative;
+    left: 70px;
+    top: 150px;
+}
+.p{
+    position: relative;
+    top: 130px;
+    left: 130px;
+    font-size: larger;
+    font-style: oblique;
+    font-family: Brush Script MT;
+    font-size: 23px;
+    color: #000000
+}
+.text{
+    position: relative;
+    top: 150px;
+    left: 8px;
+    color: black;
+}
+.body2{
+    width: 700px;
+    height: 600px;
+    position: relative;
+    left:700px;
+    top: -650px;
+    background-color: aliceblue;
+    box-shadow: 0 0 30px black;
+    clip-path: inset(-30px -30px -30px 0px);
+}
+.form{
+    position: relative;
+    left: 500px;
+}
+.email{
+    position: relative;
+    left: 100px;
+
+}
+.input{
+position: relative;
+left: 100px;
+width: 300px;
+height: 30px;
+border-radius: 5px;
+}
+.button{
+    position: relative;
+    top:100px;
+    left:100px;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(26, 234, 182);
+    font-size: medium;
+    border-color: rgb(26, 234, 182);
+}

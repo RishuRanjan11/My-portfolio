@@ -1,0 +1,66 @@
+*{
+   font-weight: 300;
+    font-family:'Times New Roman', Times, serif;
+    margin:5px;
+    font-weight: bold;
+  
+  }
+  body{
+    background-image:url(nitkkr.jpg);
+    background-size: auto;
+    
+  }
+  #title{
+    color:black;
+    text-align:center;
+    font-weight: bold;
+  }
+  #description{
+    color:#0b00e6;
+    text-align:center;
+    font-weight: bold;
+  }
+  
+  label{
+    display:block;
+    margin:10px;
+    font-size: 1.2rem;
+    
+    
+  }
+  #name,#email,#number,#age,#dropdown{
+    width:100%;
+    height:3rem;
+    border-radius: 20px;
+    border-color:burlywood;
+    margin:10px;
+    
+    
+  }
+  textarea{
+    width:100%;
+    height:10rem;
+    border-radius:10px;
+    border-color:burlywood;
+  }
+  button{
+    background-color:rgba(178, 95, 211, 0.751);
+    color:rgb(0, 0, 0);
+    border-radius:7px;
+    width:30%;
+    height:30px;
+    border:none;
+    
+    font-size: 1rem;
+    
+  }
+  
+  
+  #form{
+    margin-left:20%;
+    margin-right:20%;
+    background-color:rgb(163, 159, 227, 0.5);
+    
+    padding:15px;
+    border-radius:10px;
+  }
