@@ -76,12 +76,10 @@ section{
     margin-right: 50vh;
 }
 
-/* Update the CSS for the profile picture */
-
-
-#name{
-    color: red;
+#name {
+    color: red; /* Adjust color as needed */
 }
+
 
 /* Add styles for the content container */
 .content-container {
@@ -268,7 +266,7 @@ h3{
 .service-tile button:hover{
     transition:0.3s;
     transform: scale(1.2);
-    background-color: red;
+    background-color: 0f0e17;
 }
 
 
@@ -335,3 +333,133 @@ footer{
     text-align: center;
     background-color: #161421;
 }
+
+
+
+/* Add a media query for screens smaller than 768px (typical tablet and mobile sizes) */
+/* Add a media query for screens smaller than 768px (typical tablet and mobile sizes) */
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        padding: 5px 0; /* Reduce padding for smaller screens */
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        position: absolute;
+        top: 50px; /* Position the links below the navbar */
+        left: 0;
+        background-color: #0f0e17;
+        width: 100%;
+        text-align: center;
+        z-index: 1; /* Ensure the navigation links appear above other content */
+    }
+
+    .nav-links li {
+        padding: 10px 0; /* Add vertical padding to each link */
+    }
+
+    .brand {
+        margin-left: 0; /* Center brand logo */
+        text-align: center;
+    }
+
+    #welcome-section h1 {
+        margin-right: auto;
+    }
+
+    #welcome-section #tagline {
+        margin-right: auto;
+    }
+
+    #profilepic {
+        margin-top: 10vh;
+        width: 80%;
+    }
+
+    .aboutme {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 5vh;
+    }
+
+    .content-container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .service-tile {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 30px; /* Add space between service tiles */
+    }
+
+    #projects .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/* Add a media query for screens smaller than 480px (typical mobile sizes) */
+@media screen and (max-width: 480px) {
+    #profilepic {
+        width: 280px; /* Adjust width for smaller screens */
+    }
+
+    #brand-name {
+        font-size: 1.8rem; /* Decrease font size for brand name */
+    }
+
+    #nav-bar {
+        padding: 1px 0; /* Reduce padding for smaller screens */
+        position: fixed;
+
+    }
+
+    .nav-links {
+        top: 30px; /* Position the links below the navbar */
+    }
+
+    .nav-links a {
+        padding: 0px 0; /* Add vertical padding to each link */
+        font-size: 1.3rem; /* Decrease font size for navigation links */
+    }
+
+
+    #welcome-section h1 {
+        margin:auto;
+        font-size: 3rem; /* Decrease font size for heading */
+        margin-top: 200px; /* Adjust margin for smaller screens */
+    }
+
+    #welcome-section #tagline {
+        font-size: 1.5rem; /* Decrease font size for tagline */
+    }
+
+    .aboutme {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 5vh;
+    }
+
+    .service {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center; /* Center services horizontally */
+    }
+
+    .service-tile {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 20px; /* Add space between service tiles */
+    }
+
+    #contacts p {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    #contacts .social-medias {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+        flex-wrap: wrap; /* Ensure social media icons wrap properly */
+        gap: 20px; /* Reduce gap between social media icons */
+    }
+
+    #contacts .social-media {
+        font-size: 1.2rem; /* Decrease font size for social media links */
+    }
+}
+
